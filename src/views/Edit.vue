@@ -4,13 +4,13 @@
     <form @submit.prevent="update">
       <div class="form-group">
         <label>Question</label>
-        <input v-model="form.name" class="form-control" required />
+        <input v-model="form.question" class="form-control" required />
       </div>
 
       <div class="form-group mt-3">
         <label>Answer</label>
         <input
-          v-model="form.email"
+          v-model="form.answer"
           class="form-control"
           type="text"
           required
