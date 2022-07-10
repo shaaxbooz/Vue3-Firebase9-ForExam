@@ -16,7 +16,7 @@ const firebaseApp = firebase.initializeApp(config)
 const db = firebaseApp.firestore()
 const testsCollection = db.collection('tests')
 
-export const createUser = test => {
+export const createTest = test => {
   return testsCollection.add(test)
 }
 
